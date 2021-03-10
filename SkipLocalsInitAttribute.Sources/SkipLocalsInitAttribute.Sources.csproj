@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+    
+    <PropertyGroup>
+        <TargetFramework>netstandard1.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+        <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
+        <DevelopmentDependency>true</DevelopmentDependency>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Title>Source file for SkipLocalsInitAttribute</Title>
+        <Description>A source code package of SkipLocalsInitAttribute that prevents the compiler zeroing local variables.</Description>
+        <PackageProjectUrl>https://github.com/skarllot/SkipLocalsInitAttribute.Sources</PackageProjectUrl>
+        <PackageTags>source;skiplocalsinit;performance;stackalloc;attribute;net5.0</PackageTags>
+        <RepositoryUrl>https://github.com/skarllot/SkipLocalsInitAttribute.Sources</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Authors>Fabrício Godoy</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="*.cs" PackagePath="contentFiles\cs\net40\" BuildAction="Compile" />
+        <Content Include="*.cs" PackagePath="contentFiles\cs\netstandard1.0\" BuildAction="Compile" />
+        <Content Include="*.cs" PackagePath="contentFiles\cs\netstandard2.0\" BuildAction="Compile" />
+        <Content Include=".nuget/_._" PackagePath="contentFiles\cs\net5.0\" BuildAction="None" />
+    </ItemGroup>
+
+</Project>
