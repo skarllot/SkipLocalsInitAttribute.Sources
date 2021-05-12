@@ -8,6 +8,7 @@
         <DevelopmentDependency>true</DevelopmentDependency>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -23,9 +24,12 @@
 
     <ItemGroup>
         <Content Include="*.cs" PackagePath="contentFiles\cs\net40\" BuildAction="Compile" />
+        <Content Include="*.cs" PackagePath="contentFiles\cs\net45\" BuildAction="Compile" />
+        <Content Include="*.cs" PackagePath="contentFiles\cs\net461\" BuildAction="Compile" />
         <Content Include="*.cs" PackagePath="contentFiles\cs\netstandard1.0\" BuildAction="Compile" />
         <Content Include="*.cs" PackagePath="contentFiles\cs\netstandard2.0\" BuildAction="Compile" />
         <Content Include=".nuget/_._" PackagePath="contentFiles\cs\net5.0\" BuildAction="None" />
+        <Content Include=".nuget/_._" PackagePath="contentFiles\cs\net6.0\" BuildAction="None" />
     </ItemGroup>
 
 </Project>
