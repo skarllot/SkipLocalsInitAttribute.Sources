@@ -1,3 +1,4 @@
+#if !NET5_0_OR_GREATER
 namespace System.Runtime.CompilerServices
 {
     [AttributeUsage(
@@ -17,3 +18,4 @@ namespace System.Runtime.CompilerServices
         }
     }
 }
+#endif
