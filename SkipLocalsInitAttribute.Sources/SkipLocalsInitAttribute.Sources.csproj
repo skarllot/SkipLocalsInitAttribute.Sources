@@ -1,21 +1,21 @@
-<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+<Project Sdk="Microsoft.Build.NoTargets/3.5.6">
     
     <PropertyGroup>
         <TargetFramework>netstandard1.0</TargetFramework>
-        <LangVersion>9</LangVersion>
+        <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
         <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
         <DevelopmentDependency>true</DevelopmentDependency>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
     </PropertyGroup>
 
     <PropertyGroup>
         <Title>Source file for SkipLocalsInitAttribute</Title>
         <Description>A source code package of SkipLocalsInitAttribute that prevents the compiler zeroing local variables.</Description>
         <PackageProjectUrl>https://github.com/skarllot/SkipLocalsInitAttribute.Sources</PackageProjectUrl>
-        <PackageTags>source;skiplocalsinit;performance;stackalloc;attribute;net5.0</PackageTags>
+        <PackageTags>source;skiplocalsinit;performance;stackalloc;attribute;net5.0;net6.0</PackageTags>
         <RepositoryUrl>https://github.com/skarllot/SkipLocalsInitAttribute.Sources</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Authors>Fabrício Godoy</Authors>
